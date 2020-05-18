@@ -147,8 +147,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 go.transform.SetParent(content.transform);
 
                 // 방 이름 쓰기
-                InputField inputF = go.transform.GetComponent<InputField>();
-                inputF.text = ri.Name;
+                Text room = go.transform.GetComponentInChildren<Text>();
+                room.text = ri.Name + "(" + ri.PlayerCount.ToString() + "/" + ri.MaxPlayers.ToString() + ")";
 
                 // 방 목록을 클릭했을 때의 이벤트 바인딩
 
@@ -172,10 +172,18 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     void OnSelectRoom(BaseEventData arg)
     {
+        // 선택한 방의 이름을 roomName 항목에 쓴다.
+        string rName = arg.selectedObject.GetComponentInChildren<Text>().text;
+        string[] splitName = rName.Split('(');
+        roomName.text = splitName[0];
+
+        // 선택한 방의 입장 인원을 maxUsers 항목에 쓴다.
+        splitName = splitName[1].Split('/');
+        splitName = splitName[1].Split(')');
+        maxUsers.text = splitName[0];
+
         // Join 버튼을 활성화한다.
         btn_Join.interactable = true;
-        // 선택한 방의 이름을 roomName 항목에 쓴다.
-        roomName.text = arg.selectedObject.GetComponent<InputField>().text;
     }
 
     public override void OnConnectedToMaster()

@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1588439220}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -566,7 +566,7 @@ MonoBehaviour:
   maxUsers: {fileID: 769737401}
   btn_Join: {fileID: 1497253166}
   content: {fileID: 1588439219}
-  roomField: {fileID: 5346055289733131709, guid: faf59ca040ecd974db39510163801e5c,
+  roomField: {fileID: 3081889372788245186, guid: eb6c13d886addbd4da85383eb5e48e0d,
     type: 3}
 --- !u!1 &590859071
 GameObject:
@@ -1812,7 +1812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000014676298}
+  m_AnchoredPosition: {x: 0, y: 0.00068884675}
   m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1588439221
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 933714337}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999931
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

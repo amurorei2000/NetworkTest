@@ -40,4 +40,39 @@ public class GameManager : MonoBehaviourPunCallbacks
         PhotonNetwork.Instantiate("Player", new Vector3(0, 1.5f, 0), Quaternion.identity);
     }
 
+    void Update()
+    {
+        // ESC 키를 누르면 연결 종료
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PhotonNetwork.Disconnect();
+        }
+        // 키보드의 L 키를 누르면 방 나가기 및 로비로 변경
+        else if(Input.GetKeyDown(KeyCode.L))
+        {
+            // 만일, 방장이라면 방장 권한을 다른 사람에게 넘긴다.
+            if(PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.SetMasterClient(PhotonNetwork.PlayerListOthers[0]);
+            }
+
+            // 방을 떠난다.
+            PhotonNetwork.LeaveRoom();
+
+            // 로비 씬으로 전환한다.
+            PhotonNetwork.LoadLevel("LobbyScene");
+
+            Cursor.lockState = CursorLockMode.None;
+
+        }
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        print("연결 종료: " + cause);
+        // 로그인 씬으로 전환한다.
+        PhotonNetwork.LoadLevel("LoginScene");
+
+        Cursor.lockState = CursorLockMode.None;
+    }
 }

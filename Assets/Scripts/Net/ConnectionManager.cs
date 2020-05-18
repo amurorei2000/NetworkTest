@@ -27,6 +27,9 @@ public class ConnectionManager : MonoBehaviourPunCallbacks
         // 마스터 클라이언트의 씬 셋팅에 다른 클라이언트를 동기화
         PhotonNetwork.AutomaticallySyncScene = true;
 
+        // 서버에 연결할 아이디 입력
+        PhotonNetwork.NickName = userID.text;
+
         // 환경 설정 파일에 있는 설정대로 서버 연결하기
         PhotonNetwork.ConnectUsingSettings();
     }
@@ -43,10 +46,6 @@ public class ConnectionManager : MonoBehaviourPunCallbacks
 #if CONNECT_TEST
         Debug.Log("마스터 서버 접속 완료, 로비에 연결 요청~");
 #endif
-
-        // 서버에 연결할 아이디 입력
-        PhotonNetwork.NickName = userID.text;
-
         // 로비 접속 요청(디폴트)
         PhotonNetwork.JoinLobby(TypedLobby.Default);
 

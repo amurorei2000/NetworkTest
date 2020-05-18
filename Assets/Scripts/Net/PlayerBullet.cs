@@ -9,7 +9,6 @@ public class PlayerBullet : MonoBehaviourPun, IPunObservable
     public int attackPower = 2;
     public float lifeTime = 4.0f;
 
-    bool canStrike = true;
     Vector3 pos;
 
     void Start()
@@ -36,9 +35,8 @@ public class PlayerBullet : MonoBehaviourPun, IPunObservable
     private void OnCollisionEnter(Collision col)
     {
         // 만일, 마스터 오브젝트이면서 부딪힌 대상의 레이어가 "Enemy"라면...
-        if (photonView.IsMine && col.gameObject.layer == LayerMask.NameToLayer("Enemy") && canStrike)
+        if (photonView.IsMine && col.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            canStrike = false;
             PlayerMove pm = col.transform.GetComponent<PlayerMove>();
             //PhotonView pv = col.transform.GetComponent<PhotonView>();
             
@@ -49,13 +47,13 @@ public class PlayerBullet : MonoBehaviourPun, IPunObservable
             }
 
             // 마스터와 복제 오브젝트 둘 다 제거한다.
-            photonView.RPC("DestroySelf", RpcTarget.AllBuffered);
+            photonView.RPC("DestroyMySelf", RpcTarget.AllBuffered);
         }
     }
 
     // 자기 자신을 제거하는 브로드캐스팅 함수
     [PunRPC]
-    void DestroySelf()
+    void DestroyMySelf()
     {
         Destroy(gameObject);
     }

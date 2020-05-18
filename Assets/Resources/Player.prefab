@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 1522853918}
   - component: {fileID: 1522853917}
   - component: {fileID: 1522853916}
-  - component: {fileID: 1522853919}
   - component: {fileID: 1522853920}
   m_Layer: 0
   m_Name: Main Camera
@@ -457,22 +456,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522853915}
   m_Enabled: 1
---- !u!114 &1522853919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522853915}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0acb4b137a717a44cb8e54413d69925a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveTarget: {fileID: 4467147921776772294}
-  rotTarget: {fileID: 4467147921269780210}
-  UseLerp: 0
-  traceSpeed: 10
 --- !u!114 &1522853920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +686,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 4467147921269780222}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.3
   m_Height: 1.5
   m_Direction: 1
@@ -1902,6 +1885,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
+--- !u!1 &8727161608642140936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100326, guid: 8f0565f23a2b58541a475bd3c1393052,
+    type: 3}
+  m_PrefabInstance: {fileID: 8727161608642174190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8727161608642299688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400326, guid: 8f0565f23a2b58541a475bd3c1393052,
@@ -1911,12 +1900,6 @@ Transform:
 --- !u!4 &8727161608642299882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400132, guid: 8f0565f23a2b58541a475bd3c1393052,
-    type: 3}
-  m_PrefabInstance: {fileID: 8727161608642174190}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8727161608642140936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100326, guid: 8f0565f23a2b58541a475bd3c1393052,
     type: 3}
   m_PrefabInstance: {fileID: 8727161608642174190}
   m_PrefabAsset: {fileID: 0}

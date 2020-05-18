@@ -40,6 +40,7 @@ MonoBehaviour:
   - AttackAction
   - DamageProcess
   - DestroySelf
+  - DestroyMySelf
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

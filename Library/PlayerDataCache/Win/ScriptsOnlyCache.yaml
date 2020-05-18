@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CamBillboard
-    - CamMove
     - CamRot
     - ConnectionManager
     - GameManager
@@ -32,10 +31,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -78,33 +75,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11188}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11770}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11880}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 12098}
+      Script: {instanceID: 12128}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12504}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13180}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,69 +160,67 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11166}
-    - Class: 114
-      Script: {instanceID: 11308}
-    - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11188}
     - Class: 114
       Script: {instanceID: 11330}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11338}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11880}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 11954}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 11978}
     - Class: 114
-      Script: {instanceID: 12168}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12220}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12252}
     - Class: 114
-      Script: {instanceID: 12408}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 12442}
     - Class: 114
-      Script: {instanceID: 12562}
+      Script: {instanceID: 12518}
     - Class: 114
-      Script: {instanceID: 12570}
+      Script: {instanceID: 12604}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 12798}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12972}
     - Class: 114
-      Script: {instanceID: 13090}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13240}
+      Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13292}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13334}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13416}
     - Class: 114
-      Script: {instanceID: 13404}
+      Script: {instanceID: 13446}
+    - Class: 114
+      Script: {instanceID: 13454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -288,17 +283,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11146}
+      Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11188}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11880}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -580,6 +575,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: ab0d50a7d312400076be587269334d44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: AutoBlink
+  - hash:
+      serializedVersion: 2
       Hash: ba160f8fe96116c81151a9a24d7d9f4f
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -638,12 +639,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 8df813f2933f5613e50dac56bacf28c9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CamMove
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -844,10 +839,28 @@ ScriptsOnlyBuild:
     className: CurrentRoomIsOpenToggle
   - hash:
       serializedVersion: 2
+      Hash: 8dd97b7e07915c183f8454a86716d325
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: CameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 85045a1c02a413b343339373cf8e5d0b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: IdleChanger
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: dec38e8c0473fb4fec0ed35c638b5a5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: SpringManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -896,6 +909,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: StatesGui
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InharitTest
   - hash:
       serializedVersion: 2
       Hash: 0927e41b46e1bd11671f9b5adda4b832
@@ -1042,10 +1061,22 @@ ScriptsOnlyBuild:
     className: IsConnectedProperty
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChildTest
+  - hash:
+      serializedVersion: 2
       Hash: 1594aa47c198fea82029a38ab5f6050c
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: ServerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: SplashScreen
   - hash:
       serializedVersion: 2
       Hash: 11bdd61587db747672b66c52442395d8
@@ -1090,6 +1121,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: SpringCollider
+  - hash:
+      serializedVersion: 2
       Hash: cba6cca6bb3290c4c00d709cf63843db
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1100,6 +1137,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.PunBasics
     className: PlayerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 349a29f631977e0d310d8cd655eacad4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: ThirdPersonCamera
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1246,6 +1289,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomNameProperty
   - hash:
       serializedVersion: 2
+      Hash: bb311d95e19c6b4453f82be4d8215f7a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: IKCtrlRightHand
+  - hash:
+      serializedVersion: 2
       Hash: 32f8aa17c8c80321b4c28ac9073a84b3
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1354,6 +1403,12 @@ ScriptsOnlyBuild:
     className: ProceduralController
   - hash:
       serializedVersion: 2
+      Hash: d8fa56c444095472df2811298594dbb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: FaceUpdate
+  - hash:
+      serializedVersion: 2
       Hash: c5fd97cc10b89deaf7c60af66a6b0d5a
     assemblyName: PhotonRealtime.dll
     namespaceName: Photon.Realtime
@@ -1402,16 +1457,34 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: d0e5139fb2593ffc620d585df8fa2ae9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: SpringBone
+  - hash:
+      serializedVersion: 2
       Hash: 0ed2f28b1576a540cd29bdc18f504c5d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CamRot
   - hash:
       serializedVersion: 2
+      Hash: 06c88778eae5d73977708a880634cd1f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: RandomWind
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 9a60482210b996d1e7db7dd1adf1c554
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: UnityChanControlScriptWithRgidBody
   - hash:
       serializedVersion: 2
       Hash: 39746e049f364c3e2b3df7b09a5e96db
@@ -1532,12 +1605,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: e242c3d5dae5944841bee520c3ad8d65
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NormalCalc
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -1682,78 +1749,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ab0d50a7d312400076be587269334d44
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: AutoBlink
-  - hash:
-      serializedVersion: 2
-      Hash: 8dd97b7e07915c183f8454a86716d325
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: CameraController
-  - hash:
-      serializedVersion: 2
-      Hash: 85045a1c02a413b343339373cf8e5d0b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: IdleChanger
-  - hash:
-      serializedVersion: 2
-      Hash: dec38e8c0473fb4fec0ed35c638b5a5b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: SpringManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: SplashScreen
-  - hash:
-      serializedVersion: 2
-      Hash: bf4698a3b70ae92d7166ab31c3de7991
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: SpringCollider
-  - hash:
-      serializedVersion: 2
-      Hash: 349a29f631977e0d310d8cd655eacad4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: ThirdPersonCamera
-  - hash:
-      serializedVersion: 2
-      Hash: bb311d95e19c6b4453f82be4d8215f7a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: IKCtrlRightHand
-  - hash:
-      serializedVersion: 2
-      Hash: d8fa56c444095472df2811298594dbb3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: FaceUpdate
-  - hash:
-      serializedVersion: 2
-      Hash: d0e5139fb2593ffc620d585df8fa2ae9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: SpringBone
-  - hash:
-      serializedVersion: 2
-      Hash: 06c88778eae5d73977708a880634cd1f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: RandomWind
-  - hash:
-      serializedVersion: 2
-      Hash: 9a60482210b996d1e7db7dd1adf1c554
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: UnityChanControlScriptWithRgidBody
   platform: 5
   scenePathNames:
   - Assets/Scenes/LoginScene.unity
