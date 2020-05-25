@@ -41,6 +41,7 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
         gameObject.layer = photonView.IsMine ? LayerMask.NameToLayer("Player") : LayerMask.NameToLayer("Enemy");
         nickName.text = photonView.IsMine ? PhotonNetwork.NickName : photonView.Owner.NickName;
         nickName.color = photonView.IsMine ? Color.green : Color.red;
+        
     }
 
     void Update()
