@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.EventSystems;
 
 public class PlayerRotate : MonoBehaviourPun, IPunObservable
 {
@@ -16,8 +17,11 @@ public class PlayerRotate : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
-            mx += Input.GetAxis("Mouse X") * rotSpeed * Time.deltaTime;
-            transform.eulerAngles = new Vector3(0, mx, 0);
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                mx += Input.GetAxis("Mouse X") * rotSpeed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, mx, 0);
+            }
         }
         else
         {

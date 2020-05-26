@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     public Transform spawnPointsTeamOne;
     public Transform spawnPointsTeamTwo;
     public int selectedTeam = 0;
+    public GameObject partyPanel;
 
     private void Awake()
     {

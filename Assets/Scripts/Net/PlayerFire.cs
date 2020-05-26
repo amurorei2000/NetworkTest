@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PlayerFire : MonoBehaviourPun, IPunObservable
 {
@@ -22,21 +23,17 @@ public class PlayerFire : MonoBehaviourPun, IPunObservable
 
     void Update()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine && !EventSystem.current.IsPointerOverGameObject())
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                if (!useRay)
-                {
-                    GameObject bullet = PhotonNetwork.Instantiate("PlayerBullet", firePos.position, Quaternion.identity);
-                    bullet.transform.forward = firePos.forward;
-                    shootAudio.Play();
-                }
-                else
-                {
-                    shootAudio.Play();
-                    //ShootRay(ps, shootAudio);
-                }
+                GameObject bullet = PhotonNetwork.Instantiate("PlayerBullet", firePos.position, Quaternion.identity);
+                bullet.transform.forward = firePos.forward;
+                shootAudio.Play();
+            }
+            else if (Input.GetButtonDown("Fire2"))
+            {
+                ShootRay(ps, shootAudio);
             }
         }
     }
@@ -51,6 +48,7 @@ public class PlayerFire : MonoBehaviourPun, IPunObservable
             if (hitInfo.transform.gameObject.layer == LayerMask.NameToLayer("Enemy"))
             {
                 print("Fire Ray !!!");
+                hitInfo.transform.GetComponent<PhotonView>().RPC("EnablePartyPanel", RpcTarget.All);
             }
             else
             {

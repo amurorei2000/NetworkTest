@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CamRot : MonoBehaviour
 {
@@ -11,8 +12,11 @@ public class CamRot : MonoBehaviour
 
     void Update()
     {
-        mx += Input.GetAxis("Mouse X") * rotSpeed * Time.deltaTime;
-        my += Input.GetAxis("Mouse Y") * rotSpeed * Time.deltaTime;
-        transform.eulerAngles = new Vector3(-my, mx, 0);
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            mx += Input.GetAxis("Mouse X") * rotSpeed * Time.deltaTime;
+            my += Input.GetAxis("Mouse Y") * rotSpeed * Time.deltaTime;
+            transform.eulerAngles = new Vector3(-my, mx, 0);
+        }
     }
 }

@@ -45,6 +45,9 @@ MonoBehaviour:
   - SetMyPosition
   - SetOtherPosition
   - GetSpawnPosition
+  - EnablePartyPanel
+  - InputText
+  - TextProcess
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

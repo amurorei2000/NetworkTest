@@ -35,7 +35,8 @@ public class PlayerBullet : MonoBehaviourPun, IPunObservable
     private void OnCollisionEnter(Collision col)
     {
         // 만일, 마스터 오브젝트이면서 부딪힌 대상의 레이어가 "Enemy"라면...
-        if (photonView.IsMine && col.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        //if (photonView.IsMine && col.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if (col.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             PlayerMove pm = col.transform.GetComponent<PlayerMove>();
             //PhotonView pv = col.transform.GetComponent<PhotonView>();

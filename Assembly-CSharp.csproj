@@ -82,9 +82,11 @@
     <Compile Include="Assets\Scripts\Learn\MyList.cs" />
     <Compile Include="Assets\Scripts\Net\CamBillboard.cs" />
     <Compile Include="Assets\Scripts\Net\CamRot.cs" />
+    <Compile Include="Assets\Scripts\Net\ChatManager.cs" />
     <Compile Include="Assets\Scripts\Net\ConnectionManager.cs" />
     <Compile Include="Assets\Scripts\Net\GameManager.cs" />
     <Compile Include="Assets\Scripts\Net\LobbyManager.cs" />
+    <Compile Include="Assets\Scripts\Net\MenuController.cs" />
     <Compile Include="Assets\Scripts\Net\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\Net\PlayerFire.cs" />
     <Compile Include="Assets\Scripts\Net\PlayerMove.cs" />

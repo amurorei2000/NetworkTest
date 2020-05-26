@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 4467147921269780169}
   - component: {fileID: 4467147921269780214}
   - component: {fileID: 1891141666}
+  - component: {fileID: 992130166245626895}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -812,7 +813,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -876,6 +877,18 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &992130166245626895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467147921269780222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d12094c695abd44a4f1f3beed2d23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4467147921776772295
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.EventSystems;
 
 public class PlayerMove : MonoBehaviourPun, IPunObservable
 {
@@ -50,11 +51,15 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
         // 본인일 때에만 사용자 입력 움직임을 실행한다.
         if (photonView.IsMine)
         {
-            float h = Input.GetAxisRaw("Horizontal");
-            anim.SetFloat("Horizontal", h);
-            float v = Input.GetAxisRaw("Vertical");
-            anim.SetFloat("Vertical", v);
-
+            float h = 0;
+            float v = 0;
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                h = Input.GetAxisRaw("Horizontal");
+                anim.SetFloat("Horizontal", h);
+                v = Input.GetAxisRaw("Vertical");
+                anim.SetFloat("Vertical", v);
+            }
             Vector3 dir = transform.forward * v + transform.right * h;
             dir.Normalize();
 
