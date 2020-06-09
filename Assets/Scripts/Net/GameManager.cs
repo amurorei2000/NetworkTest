@@ -108,4 +108,16 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         Cursor.lockState = CursorLockMode.None;
     }
+
+    public override void OnConnectedToMaster()
+    {
+        PhotonNetwork.JoinLobby();
+    }
+
+
+    public override void OnJoinedLobby()
+    {
+        // 로비 씬으로 전환한다.
+        PhotonNetwork.LoadLevel("LobbyScene");
+    }
 }

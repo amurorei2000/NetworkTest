@@ -28,6 +28,8 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
     // 적의 트랜스폼 동기화 처리용 변수
     Vector3 npcPos;
     Quaternion npcRot;
+    float moveDir_X = 0;
+    float moveDir_Y = 0;
 
     void Start()
     {
@@ -77,13 +79,16 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
             dir.y = yVelocity;
 
             cc.Move(dir * moveSpeed * Time.deltaTime);
+
+            
         }
         // 본인이 아닐 경우에는 보간 처리를 한다.
         else
         {
             cc.transform.position = Vector3.Lerp(cc.transform.position, npcPos, Time.deltaTime * 100);
             cc.transform.rotation = Quaternion.Lerp(cc.transform.rotation, npcRot, Time.deltaTime * 100);
-            
+            anim.SetFloat("Horizontal", moveDir_X);
+            anim.SetFloat("Vertical", moveDir_Y);
         }
     }
 
@@ -111,6 +116,8 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
             stream.SendNext(cc.transform.position);
             stream.SendNext(cc.transform.rotation);
             stream.SendNext(curHp);
+            stream.SendNext(anim.GetFloat("Horizontal"));
+            stream.SendNext(anim.GetFloat("Vertical"));
         }
         // 그렇지 않고, 서버로부터 읽어오는 상황이라면...
         else
@@ -119,6 +126,8 @@ public class PlayerMove : MonoBehaviourPun, IPunObservable
             npcPos = (Vector3)stream.ReceiveNext();
             npcRot = (Quaternion)stream.ReceiveNext();
             curHp = (int)stream.ReceiveNext();
+            moveDir_X = (float)stream.ReceiveNext();
+            moveDir_Y = (float)stream.ReceiveNext();
         }
     }
 }

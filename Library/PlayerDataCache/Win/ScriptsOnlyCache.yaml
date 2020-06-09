@@ -12,6 +12,14 @@ ScriptsOnlyBuild:
     - PlayerFire
     - PlayerMove
     - PlayerRotate
+    - UnityChan.AutoBlink
+    - UnityChan.FaceUpdate
+    - UnityChan.IKCtrlRightHand
+    - UnityChan.IdleChanger
+    - UnityChan.RandomWind
+    - UnityChan.SpringBone
+    - UnityChan.SpringCollider
+    - UnityChan.SpringManager
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -22,8 +30,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -35,8 +41,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -91,21 +99,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12386}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12508}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13180}
+      Script: {instanceID: 13184}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,53 +188,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 11978}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 11980}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12442}
+      Script: {instanceID: 12386}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 12612}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12800}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 12828}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12846}
     - Class: 114
-      Script: {instanceID: 12972}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12976}
     - Class: 114
-      Script: {instanceID: 13138}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13292}
+      Script: {instanceID: 13142}
     - Class: 114
-      Script: {instanceID: 13334}
+      Script: {instanceID: 13296}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13338}
     - Class: 114
-      Script: {instanceID: 13446}
+      Script: {instanceID: 13420}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13450}
     - Class: 114
-      Script: {instanceID: 22360}
+      Script: {instanceID: 13458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,23 +307,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12386}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12508}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 13334}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13338}
     - Class: 114
-      Script: {instanceID: 31568}
+      Script: {instanceID: 13420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -764,6 +772,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: PunPlayerScores
@@ -1121,6 +1135,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.UtilityScripts
     className: TextButtonTransition
+  - hash:
+      serializedVersion: 2
+      Hash: 1d3489abdca23618491c8c62bf6e591e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatManager
   - hash:
       serializedVersion: 2
       Hash: 4fe8955e1c662935371b0936cafbb89b
@@ -1769,18 +1789,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuController
-  - hash:
-      serializedVersion: 2
-      Hash: 1d3489abdca23618491c8c62bf6e591e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChatManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/LoginScene.unity

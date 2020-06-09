@@ -14,26 +14,42 @@ public class PlayerFire : MonoBehaviourPun, IPunObservable
 
     ParticleSystem ps;
     AudioSource shootAudio;
+    Animator anim;
+    bool isAttack = false;
 
     void Start()
     {
         //ps = bulletEffect.GetComponent<ParticleSystem>();
         shootAudio = GetComponent<AudioSource>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
-        if (photonView.IsMine && !EventSystem.current.IsPointerOverGameObject())
+        if (photonView.IsMine)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (!EventSystem.current.IsPointerOverGameObject())
             {
-                GameObject bullet = PhotonNetwork.Instantiate("PlayerBullet", firePos.position, Quaternion.identity);
-                bullet.transform.forward = firePos.forward;
-                shootAudio.Play();
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    GameObject bullet = PhotonNetwork.Instantiate("PlayerBullet", firePos.position, Quaternion.identity);
+                    bullet.transform.forward = firePos.forward;
+                    shootAudio.Play();
+                    anim.SetTrigger("Attack");
+                    isAttack = true;
+                }
+                else if (Input.GetButtonDown("Fire2"))
+                {
+                    ShootRay(ps, shootAudio);
+                }
             }
-            else if (Input.GetButtonDown("Fire2"))
+        }
+        else
+        {
+            if(isAttack)
             {
-                ShootRay(ps, shootAudio);
+                anim.SetTrigger("Attack");
+                isAttack = false;
             }
         }
     }
@@ -62,6 +78,14 @@ public class PlayerFire : MonoBehaviourPun, IPunObservable
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        
+        if(stream.IsWriting)
+        {
+            stream.SendNext(isAttack);
+            isAttack = false;
+        }
+        else
+        {
+            isAttack = (bool)stream.ReceiveNext();
+        }
     }
 }
